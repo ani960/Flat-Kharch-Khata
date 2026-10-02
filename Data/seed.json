@@ -1,0 +1,1113 @@
+{
+ "2026-09": {
+  "key": "2026-09",
+  "settings": {
+   "cookMeals": 60,
+   "cookTeas": 60,
+   "bottlePrice": 140,
+   "borchiDaily": 50
+  },
+  "people": {
+   "anil": {
+    "name": "Anil",
+    "order": 0
+   },
+   "dewan": {
+    "name": "Dewan",
+    "order": 1
+   },
+   "awesh": {
+    "name": "Awesh",
+    "order": 2
+   },
+   "rohit": {
+    "name": "Rohit",
+    "order": 3
+   },
+   "vishal": {
+    "name": "Vishal",
+    "order": 4
+   },
+   "rahul": {
+    "name": "Rahul",
+    "order": 5
+   },
+   "prithvi": {
+    "name": "Prithvi",
+    "order": 6
+   }
+  },
+  "days": {
+   "1": {
+    "desc": "",
+    "roz": "",
+    "milk": "0",
+    "barf": "",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "2": {
+    "desc": "Ration Sabzi Borchi Roti",
+    "roz": "11410+120+200",
+    "milk": "120+298+1749",
+    "barf": "",
+    "tanker": "1500",
+    "bottles": "2",
+    "borchi": "50"
+   },
+   "3": {
+    "desc": "Sabzi Dahi",
+    "roz": "900",
+    "milk": "240",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "4": {
+    "desc": "Sabzi Ato",
+    "roz": "520+1700",
+    "milk": "0",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "5": {
+    "desc": "Sabzi",
+    "roz": "280",
+    "milk": "460",
+    "barf": "50",
+    "tanker": "1500",
+    "bottles": "2",
+    "borchi": "50"
+   },
+   "6": {
+    "desc": "Sabzi",
+    "roz": "380",
+    "milk": "580",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "7": {
+    "desc": "Chicken Sabzi Dahi Maslo Bottle",
+    "roz": "570+350+100+150+280",
+    "milk": "120",
+    "barf": "50",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "8": {
+    "desc": "Ssbzi Water Bottle",
+    "roz": "380+150+100",
+    "milk": "240",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "9": {
+    "desc": "Sabiz+Anda",
+    "roz": "270+250",
+    "milk": "240",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "3",
+    "borchi": "50"
+   },
+   "10": {
+    "desc": "Brochi Roti",
+    "roz": "200",
+    "milk": "0",
+    "barf": "50",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "11": {
+    "desc": "Biyani PKt Sabzi 1Kg Chawal Borchi Mani",
+    "roz": "150+370+450+200",
+    "milk": "120",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "12": {
+    "desc": "Murghi Sabzi(2) Anda Dahi",
+    "roz": "470+160+160+130+100",
+    "milk": "120",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "3",
+    "borchi": "50"
+   },
+   "13": {
+    "desc": "Sabzi (1,2), Briyani packet",
+    "roz": "180+140+150",
+    "milk": "180+150",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "14": {
+    "desc": "Ato ,Sabzi",
+    "roz": "850+380",
+    "milk": "120",
+    "barf": "50",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "15": {
+    "desc": "sabzi, roti",
+    "roz": "100+200",
+    "milk": "240",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "16": {
+    "desc": "Sabzi",
+    "roz": "310",
+    "milk": "180",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "3",
+    "borchi": "50"
+   },
+   "17": {
+    "desc": "Sabzi and Borchi Roti",
+    "roz": "440",
+    "milk": "280",
+    "barf": "50",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "18": {
+    "desc": "Ato ,Sabzi,BowarchI Roti",
+    "roz": "850+70+200",
+    "milk": "100",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "19": {
+    "desc": "Sabzi+Chawal+Biryani PKt",
+    "roz": "270+450+150",
+    "milk": "200",
+    "barf": "50",
+    "tanker": "",
+    "bottles": "3",
+    "borchi": "50"
+   },
+   "20": {
+    "desc": "Sabzi",
+    "roz": "360",
+    "milk": "400",
+    "barf": "100",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "21": {
+    "desc": "sabzi",
+    "roz": "260",
+    "milk": "200",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "22": {
+    "desc": "pani, sabzi,Borchi roti",
+    "roz": "80+250+200",
+    "milk": "220",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "23": {
+    "desc": "Sabzi",
+    "roz": "300",
+    "milk": "300",
+    "barf": "100",
+    "tanker": "1500",
+    "bottles": "3",
+    "borchi": "50"
+   },
+   "24": {
+    "desc": "Ato, Dhai, Sabzi, Bowarchi roti",
+    "roz": "850+400+150+200",
+    "milk": "170",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "25": {
+    "desc": "Sabzi",
+    "roz": "200",
+    "milk": "220",
+    "barf": "100",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "26": {
+    "desc": "Turi",
+    "roz": "540",
+    "milk": "360",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "2",
+    "borchi": "50"
+   },
+   "27": {
+    "desc": "Sabzi Chawal",
+    "roz": "450+450+150",
+    "milk": "440",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "28": {
+    "desc": "egg sabzi",
+    "roz": "100+420+120",
+    "milk": "240",
+    "barf": "100",
+    "tanker": "1500",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "29": {
+    "desc": "Sabzi,Ato,Rice",
+    "roz": "180+270+800+365",
+    "milk": "120+100",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "",
+    "borchi": "50"
+   },
+   "30": {
+    "desc": "Sabzi",
+    "roz": "180+180+10",
+    "milk": "80+200+70",
+    "barf": "100",
+    "tanker": "",
+    "bottles": "3",
+    "borchi": "50"
+   }
+  },
+  "counts": {
+   "2": {
+    "dewan": {
+     "c": 1,
+     "m": 0
+    },
+    "rohit": {
+     "c": 0,
+     "m": 2
+    },
+    "vishal": {
+     "c": 0,
+     "m": 2
+    },
+    "rahul": {
+     "c": 0,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "3": {
+    "anil": {
+     "c": 0,
+     "m": 2
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "rohit": {
+     "c": 0,
+     "m": 2
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 1
+    }
+   },
+   "4": {
+    "anil": {
+     "c": 0,
+     "m": 2
+    },
+    "dewan": {
+     "c": 0,
+     "m": 4
+    },
+    "rohit": {
+     "c": 0,
+     "m": 2
+    },
+    "vishal": {
+     "c": 0,
+     "m": 2
+    },
+    "rahul": {
+     "c": 0,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 2
+    }
+   },
+   "5": {
+    "anil": {
+     "c": 2,
+     "m": 2
+    },
+    "dewan": {
+     "c": 1,
+     "m": 2
+    },
+    "rohit": {
+     "c": 1,
+     "m": 2
+    },
+    "vishal": {
+     "c": 1,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "6": {
+    "anil": {
+     "c": 4,
+     "m": 4
+    },
+    "dewan": {
+     "c": 2,
+     "m": 3
+    },
+    "rohit": {
+     "c": 0,
+     "m": 2
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 2
+    }
+   },
+   "7": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "rohit": {
+     "c": 0,
+     "m": 2
+    },
+    "vishal": {
+     "c": 1,
+     "m": 2
+    },
+    "rahul": {
+     "c": 1,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "8": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "rohit": {
+     "c": 1,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 1,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "9": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "10": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "11": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "12": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "awesh": {
+     "c": 2,
+     "m": 4
+    }
+   },
+   "13": {
+    "anil": {
+     "c": 2,
+     "m": 2
+    },
+    "dewan": {
+     "c": 2,
+     "m": 2
+    },
+    "awesh": {
+     "c": 3,
+     "m": 3
+    },
+    "rahul": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "14": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 2
+    },
+    "rahul": {
+     "c": 1,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "15": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 1,
+     "m": 0
+    }
+   },
+   "16": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 2
+    },
+    "rahul": {
+     "c": 1,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "17": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 0
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 1,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "18": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "19": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 2,
+     "m": 2
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "20": {
+    "anil": {
+     "c": 2,
+     "m": 3
+    },
+    "awesh": {
+     "c": 4,
+     "m": 2
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "21": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "22": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 1,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 0,
+     "m": 1
+    }
+   },
+   "23": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 0
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "24": {
+    "anil": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 0
+    },
+    "rahul": {
+     "c": 2,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "25": {
+    "anil": {
+     "c": 0,
+     "m": 2
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 2
+    }
+   },
+   "26": {
+    "anil": {
+     "c": 2,
+     "m": 2
+    },
+    "awesh": {
+     "c": 4,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 1
+    }
+   },
+   "27": {
+    "anil": {
+     "c": 2,
+     "m": 3
+    },
+    "awesh": {
+     "c": 4,
+     "m": 2
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 1,
+     "m": 1
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 0
+    }
+   },
+   "28": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 0,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 1
+    },
+    "rahul": {
+     "c": 2,
+     "m": 1
+    }
+   },
+   "29": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 1,
+     "m": 2
+    },
+    "rahul": {
+     "c": 1,
+     "m": 0
+    },
+    "prithvi": {
+     "c": 1,
+     "m": 1
+    }
+   },
+   "30": {
+    "anil": {
+     "c": 1,
+     "m": 1
+    },
+    "dewan": {
+     "c": 1,
+     "m": 1
+    },
+    "awesh": {
+     "c": 0,
+     "m": 1
+    },
+    "vishal": {
+     "c": 2,
+     "m": 2
+    },
+    "rahul": {
+     "c": 2,
+     "m": 2
+    },
+    "prithvi": {
+     "c": 2,
+     "m": 1
+    }
+   }
+  },
+  "bills": {
+   "rent": {
+    "name": "Rent",
+    "amount": "48000",
+    "order": 0
+   },
+   "electricity": {
+    "name": "Electricity bill",
+    "amount": "12616",
+    "order": 1
+   },
+   "gas": {
+    "name": "Gas",
+    "amount": "",
+    "order": 2
+   },
+   "wifi": {
+    "name": "Wifi",
+    "amount": "1500",
+    "order": 3
+   },
+   "salary": {
+    "name": "Borchi salary",
+    "amount": "21000",
+    "order": 4
+   },
+   "maint": {
+    "name": "Maintenance",
+    "amount": "1000",
+    "order": 5
+   }
+  },
+  "payments": {
+   "imp-rohit": {
+    "pid": "rohit",
+    "amount": "17000",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-rahul": {
+    "pid": "rahul",
+    "amount": "18000-2000+800-1000+6250",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-vishal": {
+    "pid": "vishal",
+    "amount": "19956",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-dewan": {
+    "pid": "dewan",
+    "amount": "20000+90+2165+3061+4740",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-anil": {
+    "pid": "anil",
+    "amount": "20377+1500",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-awesh": {
+    "pid": "awesh",
+    "amount": "316+1900+1500+16000",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   },
+   "imp-prithvi": {
+    "pid": "prithvi",
+    "amount": "15000+5000",
+    "date": "2026-09-30",
+    "note": "Imported from sheet"
+   }
+  },
+  "cash": {}
+ },
+ "2026-10": {
+  "key": "2026-10",
+  "settings": {
+   "cookMeals": 60,
+   "cookTeas": 60,
+   "bottlePrice": 140,
+   "borchiDaily": 50
+  },
+  "people": {
+   "anil": {
+    "name": "Anil",
+    "order": 0
+   },
+   "dewan": {
+    "name": "Dewan",
+    "order": 1
+   },
+   "awesh": {
+    "name": "Awesh",
+    "order": 2
+   },
+   "rohit": {
+    "name": "Rohit",
+    "order": 3
+   },
+   "vishal": {
+    "name": "Vishal",
+    "order": 4
+   },
+   "rahul": {
+    "name": "Rahul",
+    "order": 5
+   },
+   "prithvi": {
+    "name": "Prithvi",
+    "order": 6
+   }
+  },
+  "bills": {
+   "rent": {
+    "name": "Rent",
+    "amount": "",
+    "order": 0
+   },
+   "electricity": {
+    "name": "Electricity bill",
+    "amount": "",
+    "order": 1
+   },
+   "gas": {
+    "name": "Gas",
+    "amount": "",
+    "order": 2
+   },
+   "wifi": {
+    "name": "Wifi",
+    "amount": "",
+    "order": 3
+   },
+   "salary": {
+    "name": "Borchi salary",
+    "amount": "",
+    "order": 4
+   },
+   "maint": {
+    "name": "Maintenance",
+    "amount": "",
+    "order": 5
+   }
+  },
+  "days": {},
+  "counts": {},
+  "payments": {},
+  "cash": {}
+ }
+}
