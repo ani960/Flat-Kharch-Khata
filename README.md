@@ -1,45 +1,37 @@
 # Flat Kharch Khata
 
-Monthly flat expense tracker: roz kharch, chai & vella, bills, payments, cash, and each flatmate's balance.
-ASP.NET Core (.NET 9) website with a SQL Server database.
+Flat Kharch Khata is an ASP.NET Core 9 web application for tracking monthly flat expenses, people, bills, payments, cash entries, daily expenses, and meal counts.
 
-## Run it
+## Stack
 
-```
-cd FlatKharchKhata
+- ASP.NET Core 9
+- PostgreSQL
+- Npgsql
+- HTML/CSS/JavaScript frontend
+- Docker / Render deployment
+
+## Local run
+
+1. Install .NET 9 SDK and PostgreSQL.
+2. Set `ConnectionStrings:Khata` in `appsettings.json` to a PostgreSQL connection string.
+3. Run:
+
+```bash
+dotnet restore
 dotnet run
 ```
 
-Then open http://localhost:5080
+The app creates its tables automatically and loads `Data/seed.json` when the database is empty.
 
-The first time it runs, it creates the `FlatKharchKhata` database and its tables (`Data/schema.sql`),
-and loads September 2026 from the Excel sheet plus a blank October 2026 (`Data/seed.json`).
+## Render deployment
 
-## Settings (`appsettings.json`)
+Create a Render PostgreSQL database and a Render Web Service from this repository using the included `Dockerfile`.
 
-- `ConnectionStrings:Khata`: the SQL Server connection. The default uses your Windows login on `localhost`.
-- `App:Password`: leave empty for no login (fine on your own PC). **Set it before putting the site online**;
-  everyone then signs in with that one password.
-- `Urls`: where the site listens. Use `http://0.0.0.0:5080` to open it from your phone on the same Wi-Fi
-  (`http://<this PC's IP>:5080`). You may need to allow port 5080 in Windows Firewall.
+Set these environment variables on the Render Web Service:
 
-## Tables
+- `ConnectionStrings__Khata` = the Render PostgreSQL **internal connection URL** (recommended when the database and web service are in the same Render region)
+- `App__Password` = a strong password for the application's shared login
 
-| Table | What it holds |
-|---|---|
-| `Months` | One row per month, plus Borchi's vella/chai, bottle price, Borchi Kharchi per day |
-| `People` | Flatmates for each month |
-| `DailyKharch` | Daily entries. `Roz` keeps what was typed (e.g. `520+1700`); `RozAmount` is the worked-out number |
-| `MealCounts` | Chai and vella per person per day |
-| `Bills` | Fixed bills (rent, electricity, gas, wifi, Borchi salary, maintenance…) |
-| `Payments` | Money each flatmate paid |
-| `CashEntries` | Cash in / cash out |
+The app also accepts the PostgreSQL URL through `DATABASE_URL`.
 
-## Putting it online
-
-Vercel can't run .NET or SQL Server. Use a Windows/.NET host instead, for example:
-- **IIS on this PC or another Windows server**: `dotnet publish -c Release`, then point an IIS site at the publish folder
-  (install the .NET 9 Hosting Bundle first). Give the IIS app pool's user access to the database, or switch the
-  connection string to a SQL login.
-- **A .NET hosting provider** (Azure App Service, MonsterASP.NET, SmarterASP.NET, etc.) with a SQL Server database:
-  change the connection string to the one they give you. The app creates the tables itself on first run.
+Render's web service must listen on `0.0.0.0`; this project uses port `10000` by default.

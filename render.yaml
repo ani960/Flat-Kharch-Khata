@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: flat-kharch-khata
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ConnectionStrings__Khata
+        fromDatabase:
+          name: flat-kharch-khata-db
+          property: connectionString
+      - key: App__Password
+        sync: false
+
+databases:
+  - name: flat-kharch-khata-db
+    plan: free
+    region: singapore
+    postgresMajorVersion: "18"
+    databaseName: flatkharchkhata
+    user: flatkharchkhata

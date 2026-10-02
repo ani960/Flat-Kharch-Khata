@@ -5,13 +5,18 @@ using System.Text.Json.Nodes;
 using FlatKharchKhata;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("Khata")
-    ?? throw new InvalidOperationException("Add ConnectionStrings:Khata to appsettings.json.");
-// Leave App:Password empty to use the site without a login (fine on your own PC).
-// Set it before putting the site online; everyone signs in with that one password.
+var rawConnectionString = builder.Configuration.GetConnectionString("Khata");
+if (string.IsNullOrWhiteSpace(rawConnectionString))
+    rawConnectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
+rawConnectionString ??= "";
+var connectionString = KhataConnection.Normalize(rawConnectionString);
+if (string.IsNullOrWhiteSpace(connectionString))
+    throw new InvalidOperationException("Set ConnectionStrings:Khata or DATABASE_URL to a PostgreSQL connection string.");
+
 var password = builder.Configuration["App:Password"] ?? "";
 var loginRequired = password.Length > 0;
 
@@ -33,12 +38,11 @@ var app = builder.Build();
 
 app.Services.GetRequiredService<KhataStore>().EnsureDatabase(Path.Combine(AppContext.BaseDirectory, "Data"));
 
+app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
-
-// ---------- login ----------
 
 app.MapGet("/api/session", (HttpContext http) => new
 {
@@ -68,31 +72,24 @@ app.MapPost("/api/logout", async (HttpContext http) =>
     return Results.Ok();
 });
 
-// ---------- months ----------
-
 var months = app.MapGroup("/api/months");
 if (loginRequired) months.RequireAuthorization();
 
 months.MapGet("/", (KhataStore store) => Results.Json(store.GetAll()));
-
 months.MapGet("/versions", (KhataStore store) => Results.Json(store.Versions()));
-
 months.MapGet("/{key}", (string key, KhataStore store) =>
     KhataStore.ValidMonth(key) && store.Get(key) is { } doc ? Results.Json(doc) : Results.NotFound());
-
 months.MapPost("/", (JsonObject doc, KhataStore store) =>
 {
     var key = doc["key"]?.GetValue<string>();
     if (!KhataStore.ValidMonth(key)) return Results.BadRequest("Month must look like 2026-10.");
     return store.Create(key!, doc) ? Results.Ok(new { version = 1 }) : Results.Conflict("That month already exists.");
 });
-
 months.MapPost("/{key}/patch", (string key, JsonObject patch, KhataStore store) =>
 {
     if (!KhataStore.ValidMonth(key)) return Results.BadRequest("Month must look like 2026-10.");
     return store.Patch(key, patch) is { } version ? Results.Ok(new { version }) : Results.NotFound();
 });
-
 months.MapPut("/{key}", (string key, JsonObject doc, KhataStore store) =>
 {
     if (!KhataStore.ValidMonth(key)) return Results.BadRequest("Month must look like 2026-10.");
@@ -102,3 +99,30 @@ months.MapPut("/{key}", (string key, JsonObject doc, KhataStore store) =>
 app.Run();
 
 internal sealed record LoginRequest(string? Password);
+
+static class KhataConnection
+{
+    public static string Normalize(string value)
+    {
+        if (string.IsNullOrWhiteSpace(value)) return "";
+        value = value.Trim();
+        if (!value.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) &&
+            !value.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
+            return value;
+
+        var uri = new Uri(value);
+        var builder = new NpgsqlConnectionStringBuilder
+        {
+            Host = uri.Host,
+            Port = uri.IsDefaultPort ? 5432 : uri.Port,
+            Database = uri.AbsolutePath.Trim('/'),
+            Username = Uri.UnescapeDataString(uri.UserInfo.Split(':', 2)[0]),
+            Password = uri.UserInfo.Contains(':') ? Uri.UnescapeDataString(uri.UserInfo[(uri.UserInfo.IndexOf(':') + 1)..]) : ""
+        };
+
+        if (uri.Query.Contains("sslmode=require", StringComparison.OrdinalIgnoreCase))
+            builder.SslMode = Npgsql.SslMode.Require;
+
+        return builder.ConnectionString;
+    }
+}
