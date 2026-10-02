@@ -57,7 +57,13 @@ public sealed partial class KhataStore(string connectionString)
     {
         using var c = Open();
         var schema = File.ReadAllText(Path.Combine(dataFolder, "schema.sql"));
-        Exec(c, null, schema);
+        // Execute each DDL statement separately. This avoids multi-statement parsing
+        // differences between PostgreSQL/Npgsql versions during Render startup.
+        foreach (var statement in schema.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            if (statement.Length == 0) continue;
+            Exec(c, null, statement);
+        }
 
         var seedPath = Path.Combine(dataFolder, "seed.json");
         if (Scalar(c, null, "SELECT COUNT(*) FROM \"Months\"") is 0 && File.Exists(seedPath))
